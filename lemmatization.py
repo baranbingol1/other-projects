@@ -27,3 +27,6 @@ def lemmetization(text):
                 hashTable[word] = new_word[0][1][0]
                 words.append(new_word[0][1][0])
     return ' '.join(words)
+#Lemmatization bittikten sonra
+def to_lower(text):
+    return text.lower()
