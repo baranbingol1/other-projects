@@ -1,5 +1,10 @@
 from nltk import word_tokenize
+import nltk
+nltk.download('punkt')
+#!pip install zemberek-python
+#!pip install zeyrek
 import zeyrek #Türkçe kelimelerin lemmatization'ı için kütüphane
+analyzer = zeyrek.MorphAnalyzer()
 #Lemmetization için fonksiyon
 hashTable = {}
 def lemmetization(text):
